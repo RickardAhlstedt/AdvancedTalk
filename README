@@ -1,0 +1,10 @@
+AdvancedTalk
+===========
+A more advanced version of SimpleTalk.
+
+Features:
+---------
+- Built on SimpleTalk
+- Stable
+- User Management
+- Logging to a DB instead of local file.
