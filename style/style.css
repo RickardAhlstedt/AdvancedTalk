@@ -1,0 +1,102 @@
+/* 
+    Document   : style
+    Created on : 2012-apr-28, 16:46:01
+    Author     : Ricky
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background: #333333;
+    font:12px arial;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 600px;
+}
+
+#greetings {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background-color: #ffffff;
+    width: 200px;
+    padding: 5px;
+    box-shadow: inset 0 0 5px #000;
+    -webkit-box-shadow: inset 0 0 5px #000;
+    -moz-box-shadow: inset 0 0 5px #000;
+}
+
+label {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.submit {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    border: 0px;
+    padding: 5px;
+    background-color: #cccccc;
+}
+
+#greetings #logintext {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 0 5px #ccc;
+}
+
+#greetings #registertext {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 0 5px #ccc;
+}
+
+#chat {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+input:focus, select:focus textarea:focus submit:focus{
+outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a {
+    color:#0000FF;
+    text-decoration:none; 
+}
+
+a:hover { 
+    text-decoration:underline; 
+}
+
+input { 
+    font:12px arial; 
+}
