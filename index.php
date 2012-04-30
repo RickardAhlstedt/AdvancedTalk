@@ -13,12 +13,33 @@
 $(document).ready(function(){
    $("#register").slideToggle('slow');
    $("#logintext").click(function(){
-      $("#login").slideToggle('slow'); 
+    $("#login").slideToggle('slow'); 
    });
    $("#registertext").click(function(){
-      $("#login").slideToggle('slow'); 
-      $("#register").slideToggle('slow');
+    $("#login").slideToggle('slow'); 
+    $("#register").slideToggle('slow');
    });
+   $("#reg").click(function(){	
+    var user = $("#userregname").val();
+    var pass = $("#passwordreg").val(); // <-- Bad place to store it.
+    var mail = $("#mailreg").val();
+    $.post("inc/register.php", {username: user, pass: pass, mail: mail});
+    showMsg("Thank <b>you</b> for registrering.");
+    $("#login").slideToggle('slow'); 
+    $("#register").slideToggle('slow');
+    return false;
+   });
+    
+   function showMsg(text) {
+    $.msg({
+        bgPath : 'img/',
+        autoUnblock : false,
+        fadeIn : 500,
+        fadeOut : 200,
+        content : text
+    });
+   }
+   
 });
 </script>
         <title>AdvancedTalk - ALPHA</title>
@@ -34,11 +55,11 @@ $(document).ready(function(){
                     <form action="" method="post">
                         <label for="username">Username:</label>
                         <br />
-                        <input type="text" id="username" name="username" class="submit">
+                        <input type="text" id="username" name="username" class="input">
                         <br />
                         <label for="password">Password:</label>
                         <br />
-                        <input type="password" id="password" name="password" class="submit">
+                        <input type="password" id="password" name="password" class="input">
                         <br />
                         <input type="submit" id="submit" name="submit" class="submit" value="Login">
                     </form>
@@ -50,20 +71,25 @@ $(document).ready(function(){
                         <form action="" method="post">
                         <label for="username">Username:</label>
                         <br />
-                        <input type="text" id="username" name="username" class="submit">
+                        <input type="text" id="userregname" name="userregname" class="input">
                         <br />
                         <label for="password">Password:</label>
                         <br />
-                        <input type="password" id="password" name="password" class="submit">
+                        <input type="password" id="passwordreg" name="passwordreg" class="input">
                         <br />
                         <label for="password">E-mail:</label>
                         <br />
-                        <input type="password" id="mail" name="mail" class="submit">
+                        <input type="password" id="mailreg" name="mailreg" class="input">
                         <br />
-                        <input type="submit" id="submit" name="submit" class="submit" value="Register">
+                        <input type="submit" id="reg" name="reg" class="submit" value="Register">
                     </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="bottombarwrapper">
+            <div id="bottombar">
+                Haha!
             </div>
         </div>
     </body>

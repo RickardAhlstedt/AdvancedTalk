@@ -43,6 +43,18 @@ label {
     font-style: italic;
 }
 
+.input {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    border: 0px;
+    padding: 5px;
+    background-color: #ffffcc;
+}
+
 .submit {
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -53,6 +65,32 @@ label {
     border: 0px;
     padding: 5px;
     background-color: #cccccc;
+}
+
+#bottombarwrapper {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+    width: 800px;
+}
+
+#bottombar {
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-top-left-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+    border: 0px solid #ccc;
+    background-color: #ffffff;
+    padding: 5px;
+    bottom: 0px;
+    width: 790px;
+    z-index: 90001;
+    position: absolute;
 }
 
 #greetings #logintext {
@@ -81,7 +119,7 @@ label {
 }
 
 input:focus, select:focus textarea:focus submit:focus{
-outline: none;
+    outline: none;
 }
 
 a:focus {
